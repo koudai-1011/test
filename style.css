@@ -4,7 +4,7 @@
 body {
     margin: 0 auto;
     max-width: 600px;
-    background-image: url(/image/p0044_m.jpg);
+    background-image: url(https://github.com/koudai-1011/test/blob/main/p0044_m.jpg?raw=true);
 }
 
 .container {
@@ -51,7 +51,7 @@ header {
 .first {
     text-align: center;
     height: 546px;
-    background-image: url(/image/背景.png);
+    background-image: url(https://github.com/koudai-1011/test/blob/main/%E8%83%8C%E6%99%AF.png?raw=true);
 }
 
 .pictures {
@@ -77,7 +77,7 @@ header {
 
 .switch {
     height: 68px;
-    background-image: url(/image/背景.png);
+    background-image: url(https://github.com/koudai-1011/test/blob/main/%E8%83%8C%E6%99%AF.png?raw=true);
     text-align: center;
 }
 
@@ -101,7 +101,7 @@ button:active {
 /* コンテンツ */
 /* about */
 .intro {
-    background-image: url(/image/背景2.png);
+    background-image: url(https://github.com/koudai-1011/test/blob/main/%E8%83%8C%E6%99%AF2.png?raw=true);
     background-color: rgba(255, 255, 255, 0.5);
     background-blend-mode: lighten;
 }
@@ -157,7 +157,7 @@ button:active {
 
 /* 作品 */
 .work {
-    background-image: url(/image/22684457.jpg);
+    background-image: url(https://github.com/koudai-1011/test/blob/main/22684457.jpg?raw=true);
 }
 
 .text-line-w {
