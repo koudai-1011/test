@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+/* 全体 */
+body {
+    margin: 0 auto;
+    max-width: 600px;
+    background-image: url(/image/p0044_m.jpg);
+}
+
+.container {
+    max-width: 600px;
+    /* width: calc(100% - 64px); */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container-first {
+    max-width: 600px;
+    /* width: calc(100% - 16px); */
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.text-line {
+    display: flex;
+    align-items: center;
+}
+
+.text-line:before,
+.text-line:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    /* 線の太さ */
+    background: #000;
+    /* 線の色 */
+    margin: 0 0.2em;
+    /* 文字と線の余白 */
+}
+
+
+
+/* ヘッダー */
+header {
+    text-align: center;
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+/* ファーストビュー */
+.first {
+    text-align: center;
+    height: 546px;
+    background-image: url(/image/背景.png);
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+}
+
+
+.tooth,
+.battle,
+.punch,
+.betabeta {
+    display: none;
+}
+
+/* スイッチ */
+.switch-zone>img {
+    width: 100%;
+}
+
+.switch {
+    height: 68px;
+    background-image: url(/image/背景.png);
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: yellow;
+    border: 2px solid black;
+    box-shadow: 0px 8px black;
+    margin-bottom: 8px;
+}
+
+button:active {
+    box-shadow: none;
+    position: relative;
+    top: 8px;
+}
+
+
+/* コンテンツ */
+/* about */
+.intro {
+    background-image: url(/image/背景2.png);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-blend-mode: lighten;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro>p {
+    font-family: "Noto Serif JP";
+    font-size: 24px;
+    letter-spacing: 0.3em;
+    line-height: 2.0;
+    font-weight: bold;
+    text-align: left;
+}
+
+.fuku {
+    font-size: 40px;
+}
+
+.samurai
+/*プロフィール*/
+
+.pro>p {
+    font-size: 18px;
+    line-height: 2.0;
+    font-weight: bold;
+}
+
+.pros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pro-L>p,
+.pro-R>p {
+    font-family: "Noto Sans JP";
+    font-size: 22px;
+    line-height: 2.5;
+}
+
+.pro-L,
+.pro-R {
+    width: 50%;
+    text-align: center;
+}
+
+/* 作品 */
+.work {
+    background-image: url(/image/22684457.jpg);
+}
+
+.text-line-w {
+    display: flex;
+    align-items: center;
+}
+
+.text-line-w:before,
+.text-line-w:after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    /* 線の太さ */
+    background: white;
+    /* 線の色 */
+    margin: 0 0.2em;
+    /* 文字と線の余白 */
+}
+
+.works>.w-p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work>h2 {
+    color: white;
+}
+
+.w-p>p {
+    color: white;
+}
+
+.works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.w-p-m {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.w-p-L,
+.w-p-R {
+    width: 50%;
+    text-align: center;
+}
+
+/* 作品を見る */
+#mask {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@media (min-width: 600px) {
+
+    /* 600px以上の画面に適用するスタイル */
+    #modal {
+        background: #fff;
+        width: 600px;
+        padding: 20px;
+        border-radius: 4px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transition: transform 0.4s;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .modal-image {
+        width: 500px;
+        /* 幅を400pxに設定 */
+        height: auto;
+        /* 高さを自動調整 */
+    }
+
+}
+
+@media (max-width: 600px) {
+    /* 600px以上の画面に適用するスタイル */
+
+    #modal {
+        background: #fff;
+        width: 400px;
+        padding: 20px;
+        border-radius: 4px;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transition: transform 0.4s;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .modal-image {
+        width: 300px;
+        /* 幅を400pxに設定 */
+        height: auto;
+        /* 高さを自動調整 */
+    }
+}
+
+#modal>p {
+    margin: 0 0 20px;
+}
+
+#mask.hidden {
+    display: none;
+}
+
+#modal.hidden {
+    transform: translate(-1500px, 0px);
+}
+
+/* アカウント */
+.account {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+/* フッター */
+footer {
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+small {
+    color: white;
+}
+
+/* 監視 */
+.fuwa {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fuwa.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ローディング */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOut 1.5s 2.5s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loading__logo {
+    opacity: 0;
+    animation: logo_fade 2s 0.5s forwards;
+    width: 175px;
+}
+
+@keyframes logo_fade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
